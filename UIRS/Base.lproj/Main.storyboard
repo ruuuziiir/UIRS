@@ -1,24 +1,374 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIRS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" text="We’re dressing up to the nines for the anniversary year!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULV-pz-4Ni">
+                                <rect key="frame" x="36" y="100" width="358" height="129.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <color key="textColor" red="0.86994707579999997" green="0.060025557879999997" blue="0.090988732870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="linkColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9F-Bz-gMe">
+                                <rect key="frame" x="20" y="249.5" width="374" height="548.5"/>
+                                <mutableString key="text">We’re celebrating 100 years of HARIBO. High time to give our country websites a makeover. We’ll be back before you know it! The new websites not only promise to be more colourful, but will also offer new functions and a whole lot of inspiration for even more joy in everyday life!
+
+In addition to showcasing our products, we’ll also be showing you how to make time together all the sweeter for yourself and others with lots of creative ideas. We’ll also let you know in the near future when and where you can experience HARIBO live, whether it’s at the shop or an event near you. Are you interested in a career at HARIBO? Before long, you’ll be able to find out more about new jobs and career opportunities at HARIBO on your local country website. We look forward to hearing from you!</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aV3-Gh-c4U">
+                                <rect key="frame" x="20" y="10" width="374" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="CLIP">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EDd-AX-XJC" kind="show" id="7AD-E6-8MT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aV3-Gh-c4U" secondAttribute="trailing" constant="20" id="5Qf-1Q-c89"/>
+                            <constraint firstItem="z9F-Bz-gMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="84l-to-2M4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z9F-Bz-gMe" secondAttribute="bottom" constant="10" id="9v8-ZH-wMd"/>
+                            <constraint firstItem="aV3-Gh-c4U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CGe-ve-iiQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ULV-pz-4Ni" secondAttribute="trailing" constant="20" id="Lpn-ha-MSk"/>
+                            <constraint firstItem="ULV-pz-4Ni" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Nu8-wG-jHY"/>
+                            <constraint firstAttribute="trailing" secondItem="z9F-Bz-gMe" secondAttribute="trailing" constant="20" id="Rpm-2F-sHg"/>
+                            <constraint firstItem="ULV-pz-4Ni" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="X6i-Eo-CK6"/>
+                            <constraint firstItem="aV3-Gh-c4U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="bbn-K5-lLM"/>
+                            <constraint firstItem="z9F-Bz-gMe" firstAttribute="top" secondItem="ULV-pz-4Ni" secondAttribute="bottom" constant="20" id="rQb-UW-bHN"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1YE-b7-kZS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1144" y="-164"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j6D-gp-pAh">
+            <objects>
+                <viewController id="EDd-AX-XJC" customClass="ViewController" customModule="UIRS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="miw-wv-PeY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="We’re dressing up to the nines for the anniversary year!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZC-tW-ye4">
+                                <rect key="frame" x="36" y="100" width="358" height="127.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <color key="textColor" red="0.86994707579999997" green="0.060025557879999997" blue="0.090988732870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM0-wF-0sm">
+                                <rect key="frame" x="20" y="247.5" width="374" height="550.5"/>
+                                <string key="text">We’re celebrating 100 years of HARIBO. High time to give our country websites a makeover. We’ll be back before you know it! The new websites not only promise to be more colourful, but will also offer new functions and a whole lot of inspiration for even more joy in everyday life!
+
+In addition to showcasing our products, we’ll also be showing you how to make time together all the sweeter for yourself and others with lots of creative ideas. We’ll also let you know in the near future when and where you can experience HARIBO live, whether it’s at the shop or an event near you. Are you interested in a career at HARIBO? Before long, you’ll be able to find out more about new jobs and career opportunities at HARIBO on your local country website. We look forward to hearing from you!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kEC-oz-8BF">
+                                <rect key="frame" x="20" y="10" width="374" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="CHARACTER WRAP">
+                                    <color key="titleColor" name="AccentColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kNX-ib-Yxu" kind="show" id="VvV-kn-JZt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ztx-gu-IOY"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zM0-wF-0sm" secondAttribute="trailing" constant="20" id="1mf-Ar-78E"/>
+                            <constraint firstItem="Ztx-gu-IOY" firstAttribute="trailing" secondItem="kEC-oz-8BF" secondAttribute="trailing" constant="20" id="1qU-Y8-9E9"/>
+                            <constraint firstItem="kEC-oz-8BF" firstAttribute="leading" secondItem="Ztx-gu-IOY" secondAttribute="leading" constant="20" id="2Ki-Wu-EoO"/>
+                            <constraint firstItem="zM0-wF-0sm" firstAttribute="leading" secondItem="Ztx-gu-IOY" secondAttribute="leading" constant="20" id="5qP-q6-rnr"/>
+                            <constraint firstItem="zM0-wF-0sm" firstAttribute="top" secondItem="3ZC-tW-ye4" secondAttribute="bottom" constant="20" id="8IN-hs-Rj4"/>
+                            <constraint firstItem="Ztx-gu-IOY" firstAttribute="bottom" secondItem="zM0-wF-0sm" secondAttribute="bottom" constant="10" id="OjM-Jm-wM0"/>
+                            <constraint firstItem="kEC-oz-8BF" firstAttribute="top" secondItem="Ztx-gu-IOY" secondAttribute="top" constant="10" id="R3h-X5-vlJ"/>
+                            <constraint firstItem="3ZC-tW-ye4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ztx-gu-IOY" secondAttribute="leading" constant="20" id="bai-nv-iBV"/>
+                            <constraint firstItem="Ztx-gu-IOY" firstAttribute="trailing" secondItem="3ZC-tW-ye4" secondAttribute="trailing" constant="20" id="jh7-Nm-KLX"/>
+                            <constraint firstItem="3ZC-tW-ye4" firstAttribute="top" secondItem="Ztx-gu-IOY" secondAttribute="top" constant="100" id="tbZ-FB-ffw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F6S-8R-TPZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dlk-aS-Qqp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="-165"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fMv-3r-K7d">
+            <objects>
+                <viewController id="kNX-ib-Yxu" customClass="ViewController" customModule="UIRS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="f2f-B5-xh9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="We’re dressing up to the nines for the anniversary year!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeW-4T-8Pr">
+                                <rect key="frame" x="36" y="100" width="358" height="127.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <color key="textColor" red="0.86994707579999997" green="0.060025557879999997" blue="0.090988732870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xw-Lr-6Jm">
+                                <rect key="frame" x="20" y="247.5" width="374" height="550.5"/>
+                                <string key="text">We’re celebrating 100 years of HARIBO. High time to give our country websites a makeover. We’ll be back before you know it! The new websites not only promise to be more colourful, but will also offer new functions and a whole lot of inspiration for even more joy in everyday life!
+
+In addition to showcasing our products, we’ll also be showing you how to make time together all the sweeter for yourself and others with lots of creative ideas. We’ll also let you know in the near future when and where you can experience HARIBO live, whether it’s at the shop or an event near you. Are you interested in a career at HARIBO? Before long, you’ll be able to find out more about new jobs and career opportunities at HARIBO on your local country website. We look forward to hearing from you!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxg-jj-BX9">
+                                <rect key="frame" x="20" y="10" width="374" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="WORD WARP">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kCV-Uu-LXV" kind="show" id="HSZ-oU-9T3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xkr-6f-wsG"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rxg-jj-BX9" firstAttribute="top" secondItem="xkr-6f-wsG" secondAttribute="top" constant="10" id="1Vc-h3-wfC"/>
+                            <constraint firstItem="xkr-6f-wsG" firstAttribute="bottom" secondItem="1Xw-Lr-6Jm" secondAttribute="bottom" constant="10" id="6UN-XY-cjg"/>
+                            <constraint firstItem="1Xw-Lr-6Jm" firstAttribute="leading" secondItem="xkr-6f-wsG" secondAttribute="leading" constant="20" id="8JL-03-Ret"/>
+                            <constraint firstItem="PeW-4T-8Pr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xkr-6f-wsG" secondAttribute="leading" constant="20" id="G5H-Zl-lxJ"/>
+                            <constraint firstItem="1Xw-Lr-6Jm" firstAttribute="top" secondItem="PeW-4T-8Pr" secondAttribute="bottom" constant="20" id="Gs8-4e-D4L"/>
+                            <constraint firstItem="Rxg-jj-BX9" firstAttribute="leading" secondItem="xkr-6f-wsG" secondAttribute="leading" constant="20" id="RvH-wP-vhs"/>
+                            <constraint firstItem="PeW-4T-8Pr" firstAttribute="top" secondItem="xkr-6f-wsG" secondAttribute="top" constant="100" id="Xm7-Uf-6u0"/>
+                            <constraint firstItem="xkr-6f-wsG" firstAttribute="trailing" secondItem="PeW-4T-8Pr" secondAttribute="trailing" constant="20" id="d0a-82-Nks"/>
+                            <constraint firstAttribute="trailing" secondItem="1Xw-Lr-6Jm" secondAttribute="trailing" constant="20" id="vfw-nx-F0x"/>
+                            <constraint firstItem="xkr-6f-wsG" firstAttribute="trailing" secondItem="Rxg-jj-BX9" secondAttribute="trailing" constant="20" id="xtE-4S-fKL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ePt-YB-y4x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nU-ON-w64" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2417" y="-165"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fyZ-o5-kUc">
+            <objects>
+                <viewController id="BjN-rw-obr" customClass="ViewController" customModule="UIRS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="c9l-sz-0rP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="We’re dressing up to the nines for the anniversary year!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oz6-5s-pn8">
+                                <rect key="frame" x="36" y="100" width="358" height="127.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <color key="textColor" red="0.86994707579999997" green="0.060025557879999997" blue="0.090988732870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7um-3M-jpM">
+                                <rect key="frame" x="20" y="247.5" width="374" height="550.5"/>
+                                <string key="text">We’re celebrating 100 years of HARIBO. High time to give our country websites a makeover. We’ll be back before you know it! The new websites not only promise to be more colourful, but will also offer new functions and a whole lot of inspiration for even more joy in everyday life!
+
+In addition to showcasing our products, we’ll also be showing you how to make time together all the sweeter for yourself and others with lots of creative ideas. We’ll also let you know in the near future when and where you can experience HARIBO live, whether it’s at the shop or an event near you. Are you interested in a career at HARIBO? Before long, you’ll be able to find out more about new jobs and career opportunities at HARIBO on your local country website. We look forward to hearing from you!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWp-xg-6bg">
+                                <rect key="frame" x="20" y="10" width="374" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="TRUNCATE TAIL">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="4Uy-9V-XVS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l1t-i4-lLg"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7um-3M-jpM" firstAttribute="top" secondItem="Oz6-5s-pn8" secondAttribute="bottom" constant="20" id="1pF-Mq-zi5"/>
+                            <constraint firstItem="Oz6-5s-pn8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="l1t-i4-lLg" secondAttribute="leading" constant="20" id="DTy-Fr-xDE"/>
+                            <constraint firstItem="Oz6-5s-pn8" firstAttribute="top" secondItem="l1t-i4-lLg" secondAttribute="top" constant="100" id="Ofr-Be-E04"/>
+                            <constraint firstItem="PWp-xg-6bg" firstAttribute="leading" secondItem="l1t-i4-lLg" secondAttribute="leading" constant="20" id="VJt-5J-3go"/>
+                            <constraint firstItem="l1t-i4-lLg" firstAttribute="bottom" secondItem="7um-3M-jpM" secondAttribute="bottom" constant="10" id="hdJ-E2-BgU"/>
+                            <constraint firstItem="l1t-i4-lLg" firstAttribute="trailing" secondItem="PWp-xg-6bg" secondAttribute="trailing" constant="20" id="orw-6f-xAC"/>
+                            <constraint firstItem="7um-3M-jpM" firstAttribute="leading" secondItem="l1t-i4-lLg" secondAttribute="leading" constant="20" id="rZz-24-uno"/>
+                            <constraint firstAttribute="trailing" secondItem="7um-3M-jpM" secondAttribute="trailing" constant="20" id="s2l-tc-Gq4"/>
+                            <constraint firstItem="l1t-i4-lLg" firstAttribute="trailing" secondItem="Oz6-5s-pn8" secondAttribute="trailing" constant="20" id="um7-W3-PhR"/>
+                            <constraint firstItem="PWp-xg-6bg" firstAttribute="top" secondItem="l1t-i4-lLg" secondAttribute="top" constant="10" id="zvK-hM-7y7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xdf-0a-vB1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fG-3I-7Pt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2445" y="516"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Dcn-zR-BmS">
+            <objects>
+                <viewController id="Ehv-H3-AoT" customClass="ViewController" customModule="UIRS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="OPS-Zz-F5Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="We’re dressing up to the nines for the anniversary year!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x58-pi-RQJ">
+                                <rect key="frame" x="36" y="100" width="358" height="127.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <color key="textColor" red="0.86994707579999997" green="0.060025557879999997" blue="0.090988732870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54v-55-FQY">
+                                <rect key="frame" x="20" y="247.5" width="374" height="550.5"/>
+                                <string key="text">We’re celebrating 100 years of HARIBO. High time to give our country websites a makeover. We’ll be back before you know it! The new websites not only promise to be more colourful, but will also offer new functions and a whole lot of inspiration for even more joy in everyday life!
+
+In addition to showcasing our products, we’ll also be showing you how to make time together all the sweeter for yourself and others with lots of creative ideas. We’ll also let you know in the near future when and where you can experience HARIBO live, whether it’s at the shop or an event near you. Are you interested in a career at HARIBO? Before long, you’ll be able to find out more about new jobs and career opportunities at HARIBO on your local country website. We look forward to hearing from you!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XON-vb-0iw">
+                                <rect key="frame" x="20" y="10" width="374" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="TRUNCATE MIDDLE">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BjN-rw-obr" kind="show" id="vI5-NF-uRg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U9v-jM-nxz"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x58-pi-RQJ" firstAttribute="top" secondItem="U9v-jM-nxz" secondAttribute="top" constant="100" id="0WT-My-GH2"/>
+                            <constraint firstItem="XON-vb-0iw" firstAttribute="top" secondItem="U9v-jM-nxz" secondAttribute="top" constant="10" id="9fh-sW-t3t"/>
+                            <constraint firstAttribute="trailing" secondItem="54v-55-FQY" secondAttribute="trailing" constant="20" id="AMN-1e-3hT"/>
+                            <constraint firstItem="x58-pi-RQJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="U9v-jM-nxz" secondAttribute="leading" constant="20" id="GXm-vG-SIm"/>
+                            <constraint firstItem="54v-55-FQY" firstAttribute="top" secondItem="x58-pi-RQJ" secondAttribute="bottom" constant="20" id="Xqb-hx-MKN"/>
+                            <constraint firstItem="54v-55-FQY" firstAttribute="leading" secondItem="U9v-jM-nxz" secondAttribute="leading" constant="20" id="bwI-sa-0kv"/>
+                            <constraint firstItem="U9v-jM-nxz" firstAttribute="trailing" secondItem="x58-pi-RQJ" secondAttribute="trailing" constant="20" id="dNO-G7-i3s"/>
+                            <constraint firstItem="XON-vb-0iw" firstAttribute="leading" secondItem="U9v-jM-nxz" secondAttribute="leading" constant="20" id="dn1-Ys-ZTU"/>
+                            <constraint firstItem="U9v-jM-nxz" firstAttribute="bottom" secondItem="54v-55-FQY" secondAttribute="bottom" constant="10" id="uZI-9N-1JW"/>
+                            <constraint firstItem="U9v-jM-nxz" firstAttribute="trailing" secondItem="XON-vb-0iw" secondAttribute="trailing" constant="20" id="v8c-w6-pGL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7ip-ow-cYm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0EY-p7-c7Z" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="516"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="B5N-w2-JhE">
+            <objects>
+                <viewController id="kCV-Uu-LXV" customClass="ViewController" customModule="UIRS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3A6-FT-tK6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="We’re dressing up to the nines for the anniversary year!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REl-Gp-feE">
+                                <rect key="frame" x="36" y="100" width="358" height="127.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <color key="textColor" red="0.86994707579999997" green="0.060025557879999997" blue="0.090988732870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXI-aP-4aw">
+                                <rect key="frame" x="20" y="247.5" width="374" height="550.5"/>
+                                <string key="text">We’re celebrating 100 years of HARIBO. High time to give our country websites a makeover. We’ll be back before you know it! The new websites not only promise to be more colourful, but will also offer new functions and a whole lot of inspiration for even more joy in everyday life!
+
+In addition to showcasing our products, we’ll also be showing you how to make time together all the sweeter for yourself and others with lots of creative ideas. We’ll also let you know in the near future when and where you can experience HARIBO live, whether it’s at the shop or an event near you. Are you interested in a career at HARIBO? Before long, you’ll be able to find out more about new jobs and career opportunities at HARIBO on your local country website. We look forward to hearing from you!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2E-bq-UTC">
+                                <rect key="frame" x="20" y="10" width="374" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="TRUNCATE HEAD">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ehv-H3-AoT" kind="show" id="ZEA-3Q-UCD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FBX-AV-YAV"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FBX-AV-YAV" firstAttribute="trailing" secondItem="Y2E-bq-UTC" secondAttribute="trailing" constant="20" id="BKZ-oH-vDl"/>
+                            <constraint firstItem="Y2E-bq-UTC" firstAttribute="leading" secondItem="FBX-AV-YAV" secondAttribute="leading" constant="20" id="CsM-vf-k8u"/>
+                            <constraint firstItem="REl-Gp-feE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FBX-AV-YAV" secondAttribute="leading" constant="20" id="HCG-7Y-Kuj"/>
+                            <constraint firstItem="dXI-aP-4aw" firstAttribute="top" secondItem="REl-Gp-feE" secondAttribute="bottom" constant="20" id="a1m-6d-qS3"/>
+                            <constraint firstItem="FBX-AV-YAV" firstAttribute="trailing" secondItem="REl-Gp-feE" secondAttribute="trailing" constant="20" id="aRT-pd-lFg"/>
+                            <constraint firstItem="dXI-aP-4aw" firstAttribute="leading" secondItem="FBX-AV-YAV" secondAttribute="leading" constant="20" id="gfK-6W-gTa"/>
+                            <constraint firstItem="REl-Gp-feE" firstAttribute="top" secondItem="FBX-AV-YAV" secondAttribute="top" constant="100" id="gok-Hw-aye"/>
+                            <constraint firstItem="FBX-AV-YAV" firstAttribute="bottom" secondItem="dXI-aP-4aw" secondAttribute="bottom" constant="10" id="kah-yM-i5s"/>
+                            <constraint firstItem="Y2E-bq-UTC" firstAttribute="top" secondItem="FBX-AV-YAV" secondAttribute="top" constant="10" id="srX-LJ-vBh"/>
+                            <constraint firstAttribute="trailing" secondItem="dXI-aP-4aw" secondAttribute="trailing" constant="20" id="wx7-7s-Afl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cJt-63-1g6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atX-EH-z9x" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1126" y="516"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
